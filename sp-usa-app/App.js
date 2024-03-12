@@ -101,6 +101,7 @@ const styles = StyleSheet.create({
     width: 100, // Adjust based on your actual image sizes and desired layout
     height: 100,
     marginBottom: 10,
+    backgroundSize: contain,
   },
 });
 
