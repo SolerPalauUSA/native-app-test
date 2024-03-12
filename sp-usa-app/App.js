@@ -7,7 +7,7 @@ const App = () => {
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Soler Palau USA</Text>
       </View>
-      <ScrollView style={styles.mainContent}>
+      <ScrollView style={styles.mainContent} contentContainerStyle={styles.mainContentContainer}>
         <Text style={styles.welcomeText}>WELCOME!</Text>
         <Text style={styles.exploreText}>Explore S&P USA</Text>
         <View style={styles.iconGrid}>
