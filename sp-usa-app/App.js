@@ -41,9 +41,6 @@ const styles = StyleSheet.create({
 
   mainContainer: {
     flex: 1, 
-    flexDirection: 'column', 
-    justifyContent: 'center',
-    alignItems: 'center',
   },
   
 
@@ -68,6 +65,9 @@ const styles = StyleSheet.create({
   },
   mainContent: {
     marginTop: 60,
+    flexDirection: 'column', 
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   welcomeText: {
     fontSize: 30,
