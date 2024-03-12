@@ -84,6 +84,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 20,
     width: '50%', // Adjust as needed to manage layout
+    backgroundColor: 'white', // Shadow will be more visible with a background color
+    ...Platform.select({
+      ios: {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 2,
+      },
+      android: {
+        elevation: 3,
+      },
+    }),
   },
   iconImage: {
     width: 100, // Adjust based on your actual image sizes and desired layout
