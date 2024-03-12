@@ -13,22 +13,22 @@ const App = () => {
         <View style={styles.iconGrid}>
           {/* Products Icon */}
           <TouchableOpacity style={styles.icon} onPress={() => alert('Navigate to Products')}>
-            <Image source={require('./assets/images/fan-solid.svg')} style={styles.iconImage} />
+            <Image source={require('./assets/images/fan-solid.svg')} style={styles.iconImage} resizeMode="contain" />
             <Text>Products</Text>
           </TouchableOpacity>
           {/* Documents Icon */}
           <TouchableOpacity style={styles.icon} onPress={() => alert('Navigate to Documents')}>
-            <Image source={require('./assets/images/file-pdf-solid.svg')} style={styles.iconImage} />
+            <Image source={require('./assets/images/file-pdf-solid.svg')} style={styles.iconImage} resizeMode="contain" />
             <Text>Documents</Text>
           </TouchableOpacity>
           {/* Cross References Icon */}
           <TouchableOpacity style={styles.icon} onPress={() => alert('Navigate to Cross References')}>
-            <Image source={require('./assets/images/right-left-solid.svg')} style={styles.iconImage} />
+            <Image source={require('./assets/images/right-left-solid.svg')} style={styles.iconImage} resizeMode="contain" />
             <Text>Cross References</Text>
           </TouchableOpacity>
           {/* Important Links Icon */}
           <TouchableOpacity style={styles.icon} onPress={() => alert('Navigate to Important Links')}>
-            <Image source={require('./assets/images/links.svg')} style={styles.iconImage} />
+            <Image source={require('./assets/images/links.svg')} style={styles.iconImage}  resizeMode="contain"/>
             <Text>Important Links</Text>
           </TouchableOpacity>
         </View>
@@ -101,7 +101,6 @@ const styles = StyleSheet.create({
     width: 100, // Adjust based on your actual image sizes and desired layout
     height: 100,
     marginBottom: 10,
-    backgroundSize: contain,
   },
 });
 
