@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     opacity: 1,
     flexDirection: 'row',
-    alignItems: 'left',
+    alignItems: 'center',
     padding: 10,
   },
   headerTitle: {
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
     letterSpacing: 2,
     fontWeight: '500',
-    textAlign: 'left',
+    textAlign: 'center',
     flex: 1,
   },
   mainContent: {
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     color: '#053658',
     fontWeight: '600',
-    alignSelf: 'center',
+    alignSelf: 'left',
     marginBottom: 5,
   },
   exploreText: {
