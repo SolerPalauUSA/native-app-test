@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     color: '#053658',
     fontWeight: '600',
-    alignSelf: 'left',
+    alignSelf: 'center',
     marginBottom: 5,
   },
   exploreText: {
