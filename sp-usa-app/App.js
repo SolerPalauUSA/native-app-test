@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
     letterSpacing: 2,
     fontWeight: '500',
-    textAlign: 'center',
+    textAlign: 'left',
     flex: 1,
   },
   mainContent: {
