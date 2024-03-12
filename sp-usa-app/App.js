@@ -7,7 +7,7 @@ const App = () => {
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Soler Palau USA</Text>
       </View>
-      <ScrollView style={styles.mainContent}>
+      <ScrollView style={styles.mainContent} contentContainerStyle={styles.mainContentContainer}>
         <Text style={styles.welcomeText}>WELCOME!</Text>
         <Text style={styles.exploreText}>Explore S&P USA</Text>
         <View style={styles.iconGrid}>
@@ -58,10 +58,14 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   mainContent: {
-    flex: 1, // This will make sure your main content fills the available space.
-    flexDirection: 'column', // This is the default value, aligning children vertically.
-    justifyContent: 'center', // This vertically centers your content within the main content area.
-    alignItems: 'center', 
+    marginTop: 60, // Adjust as needed, for example, to offset the header
+    // Other styling specific to the ScrollView itself...
+  },
+  mainContentContainer: {
+    flexGrow: 1, // This ensures the container can grow to fill available space, important for justifyContent: 'center'
+    flexDirection: 'column', // This is the default but included for clarity
+    justifyContent: 'center', // Centers content vertically in the ScrollView
+    alignItems: 'center', // Centers content horizontally in the ScrollView
   },
   welcomeText: {
     fontSize: 30,
