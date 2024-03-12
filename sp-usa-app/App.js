@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, Platform } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView } from 'react-native';
 
 const App = () => {
   return (
@@ -7,28 +7,28 @@ const App = () => {
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Soler Palau USA</Text>
       </View>
-      <ScrollView style={styles.mainContent} contentContainerStyle={styles.mainContentContainer}>
+      <ScrollView style={styles.mainContent}>
         <Text style={styles.welcomeText}>WELCOME!</Text>
         <Text style={styles.exploreText}>Explore S&P USA</Text>
         <View style={styles.iconGrid}>
           {/* Products Icon */}
           <TouchableOpacity style={styles.icon} onPress={() => alert('Navigate to Products')}>
-            <Image source={require('./assets/images/fan-solid.svg')} style={styles.iconImage} resizeMode="contain" />
+            <Image source={require('./assets/images/fan-solid.png')} style={styles.iconImage} />
             <Text>Products</Text>
           </TouchableOpacity>
           {/* Documents Icon */}
           <TouchableOpacity style={styles.icon} onPress={() => alert('Navigate to Documents')}>
-            <Image source={require('./assets/images/file-pdf-solid.svg')} style={styles.iconImage} resizeMode="contain" />
+            <Image source={require('./assets/images/file-pdf-solid.png')} style={styles.iconImage} />
             <Text>Documents</Text>
           </TouchableOpacity>
           {/* Cross References Icon */}
           <TouchableOpacity style={styles.icon} onPress={() => alert('Navigate to Cross References')}>
-            <Image source={require('./assets/images/right-left-solid.svg')} style={styles.iconImage} resizeMode="contain" />
+            <Image source={require('./assets/images/right-left-solid.png')} style={styles.iconImage} />
             <Text>Cross References</Text>
           </TouchableOpacity>
           {/* Important Links Icon */}
           <TouchableOpacity style={styles.icon} onPress={() => alert('Navigate to Important Links')}>
-            <Image source={require('./assets/images/links.svg')} style={styles.iconImage}  resizeMode="contain"/>
+            <Image source={require('./assets/images/links.png')} style={styles.iconImage} />
             <Text>Important Links</Text>
           </TouchableOpacity>
         </View>
@@ -58,14 +58,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   mainContent: {
-    marginTop: 60, // Adjust as needed, for example, to offset the header
-    // Other styling specific to the ScrollView itself...
-  },
-  mainContentContainer: {
-    flexGrow: 1, // This ensures the container can grow to fill available space, important for justifyContent: 'center'
-    flexDirection: 'column', // This is the default but included for clarity
-    justifyContent: 'center', // Centers content vertically in the ScrollView
-    alignItems: 'center', // Centers content horizontally in the ScrollView
+    marginTop: 60,
   },
   welcomeText: {
     fontSize: 30,
@@ -91,18 +84,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 20,
     width: '50%', // Adjust as needed to manage layout
-    backgroundColor: 'white', // Shadow will be more visible with a background color
-    ...Platform.select({
-      ios: {
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.1,
-        shadowRadius: 2,
-      },
-      android: {
-        elevation: 3,
-      },
-    }),
   },
   iconImage: {
     width: 100, // Adjust based on your actual image sizes and desired layout
@@ -112,4 +93,3 @@ const styles = StyleSheet.create({
 });
 
 export default App;
-
