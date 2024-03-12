@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, Platform }
 
 const App = () => {
   return (
-    <View style={styles.mainContainer}>
+    <View style={{flex: 1}}>
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Soler Palau USA</Text>
       </View>
@@ -38,12 +38,6 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
-
-  mainContainer: {
-    flex: 1, 
-  },
-  
-
   header: {
     backgroundColor: '#053658',
     width: '100%',
@@ -64,10 +58,10 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   mainContent: {
-    marginTop: 60,
-    flexDirection: 'column', 
-    justifyContent: 'center',
-    alignItems: 'center',
+    flex: 1, // This will make sure your main content fills the available space.
+    flexDirection: 'column', // This is the default value, aligning children vertically.
+    justifyContent: 'center', // This vertically centers your content within the main content area.
+    alignItems: 'center', 
   },
   welcomeText: {
     fontSize: 30,
