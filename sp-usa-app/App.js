@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, Platform }
 
 const App = () => {
   return (
-    <View style={mainContainer}>
+    <View style={styles.mainContainer}>
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Soler Palau USA</Text>
       </View>
