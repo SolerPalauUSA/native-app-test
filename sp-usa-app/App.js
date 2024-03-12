@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, Platform }
 
 const App = () => {
   return (
-    <View style={{flex: 1}}>
+    <View style={mainContainer}>
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Soler Palau USA</Text>
       </View>
@@ -38,6 +38,16 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
+
+  mainContainer: {
+    flex: 1, 
+    flexDirection: 'column', 
+    justifyContent: 'center',
+    alignItems: 'center',
+     height: screenHeight,
+  },
+  
+
   header: {
     backgroundColor: '#053658',
     width: '100%',
