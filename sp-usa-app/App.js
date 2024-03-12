@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     opacity: 1,
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'left',
     padding: 10,
   },
   headerTitle: {
